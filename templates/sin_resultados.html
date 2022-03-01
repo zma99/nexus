@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} NO HAY RESULTADOS {% endblock title %}
+{% block link-productos %} ../productos {% endblock link-productos %}
+
+{% block contenido %}
+
+    <div class="container text-center">
+        <br><br><br><br>
+        <h4 class="text-center">No hay coincidencias.</h4>
+
+        {% load static %}
+        <img src="{% static 'productos/sin-resultados.png' %}">
+        <br><br><br><br>
+    </div>
+
+{% endblock contenido %}
