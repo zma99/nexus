@@ -32,3 +32,9 @@ def resultado_busqueda(request):
         return render(request, 'resultado_busqueda.html', contexto)
     else:
         return render(request, 'sin_resultados.html')
+
+
+
+def login(request):
+
+    return render(request, 'login/login.html')
